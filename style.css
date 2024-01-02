@@ -12,27 +12,17 @@ img {
   height: auto;
 }
 
-input,
-button,
-textarea {
-  font: inherit;
-}
-
 html {
   font-family: Arial, Helvetica, sans-serif;
-}
-
-h1 {
-  font-size: 2rem;
-  font-weight: bold;
+  background-color: #000000eb;
+  color: #fff;
 }
 
 h3 {
   font-size: 1.25rem;
-  font-weight: bold;
-  margin: 1rem 0.5rem;
 }
 
+h3,
 p {
   margin: 1rem 0.5rem;
 }
@@ -103,4 +93,51 @@ a {
   color: white;
   text-decoration: none;
   line-height: 1.75;
+}
+
+.bg-container {
+  position: relative;
+  max-width: 1080px;
+  height: 100dvh;
+  margin: 0 auto;
+}
+
+.bg-image {
+  object-fit: cover;
+  animation: fadeIn 2s ease-in-out forwards;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 1) 50%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  pointer-events: none;
+}
+
+.text-container {
+  position: absolute;
+  animation: fadeIn 2s ease-in-out forwards;
+}
+
+.recipe-name {
+  font-size: 2rem;
+  margin-left: 0.5rem;
+}
+
+footer {
+  margin-top: 100px;
+}
+
+.next-btn,
+.back-btn {
+  text-decoration: none;
+  font-weight: bold;
+  color: lightgrey;
 }
